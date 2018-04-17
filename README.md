@@ -5,4 +5,4 @@ Spits out messages and error codes to the terminal.
 
 # Usage
 
-py3 lb filename
+python3 lb filename
