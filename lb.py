@@ -3,6 +3,13 @@ import subprocess
 
 filename = sys.argv[1]
 
+"""
+how to use:
+python3 lb.py filename
+and filename is here understood as without the .s, so with a file named falafel.s it would be
+python3 lb.py falafel
+"""
+
 # links the assembly file.
 commandline = subprocess.run(["as", "-o", filename + ".o", filename + ".s"], 
                              stdout=subprocess.PIPE)
